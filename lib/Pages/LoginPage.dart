@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterproject/Pages/StudentPage.dart';
 
 
 
@@ -18,7 +19,17 @@ class LoginPage extends StatelessWidget{
             ],
           ),
         ),
-        body: const Center(child: Text("Test"),),
+        body: Center(
+          child: Column(
+            children: [
+              TextButton(
+                child: Text("Öğrenci Bilgileri"),
+                onPressed: () {
+                  runApp(StudentPage());
+                })
+            ],
+          ),
+        ),
       ),
     );
   }
